@@ -1,49 +1,32 @@
-# Assignment 6 - RDS and MySQL Practice
+# Assignment 6 - SQL Commands and Documentation
 
-## 📚 Objective
-The goal of this assignment was to launch an Amazon RDS instance, connect to it using MySQL, create a database and table, insert data, and verify everything works as expected.
+## Description
+This repository contains the documentation and SQL commands for **Assignment 6**. 
+It includes:
 
----
+- SQL commands to create databases, tables, and insert sample data
+- Explanation of each command and their outputs
 
-## ✅ Steps Completed
+## SQL Commands
+The following SQL commands were executed:
 
-1. **Created an RDS MySQL instance** via the AWS Console.
-2. **Configured security group** to allow MySQL connections (port 3306) from my IP address.
-3. **Connected to RDS using MySQL** from my terminal.
-4. **Created two databases**: `students` and `StudentData`.
-5. **Created a table** called `Assignments` in `StudentData`.
-6. **Inserted sample records** into the table.
-7. **Queried the table** using `SELECT * FROM Assignments` to verify data insertion.
+1. `SHOW DATABASES;`
+2. `CREATE DATABASE students;`
+3. `USE students;`
+4. `CREATE DATABASE StudentData;`
+5. `USE StudentData;`
+6. `CREATE TABLE Assignments ...`
+7. `INSERT INTO Assignments ...`
+8. `SELECT * FROM Assignments;`
 
----
+## Steps to Reproduce
+To run the SQL commands:
+1. Clone this repository:  
+   `git clone git@github.com:s10djan/assignment-6.git`
+2. Open the SQL file or run the commands directly in your MySQL terminal.
 
-## 🛠 SQL Commands Used
+## Contact
+If you have any questions or issues, feel free to contact me at:  
+- Email: [Your Email]
+- GitHub: [Your GitHub Link]
 
-See the file [`sql-commands.txt`](./sql-commands.txt) for all the SQL queries used.
-
----
-
-## 🖼️ Screenshots
-
-All screenshots are in the `screenshots/` folder:
-
-- `rds-dashboard.png` – RDS instance running
-- `terminal-sql-commands.png` – SQL queries and output
-- `security-group.png` – MySQL port open for my IP
-
----
-
-## 🙋‍♂️ What I Learned
-
-- How to launch and configure RDS
-- How to connect using MySQL
-- Creating and interacting with databases and tables
-- Importance of security groups for remote access
-
----
-
-## 💡 Challenges Faced
-
-- My terminal froze during the process — had to reopen it.
-- Ensured the correct IP and port were set in the security group.
-# Assignment 6
